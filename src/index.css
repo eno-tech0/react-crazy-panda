@@ -1,0 +1,74 @@
+body {
+	text-align: center;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+table {
+	margin: 0 auto;
+	width: 50vw;
+	background-color: #c2dae2;
+	border-radius: 2rem;
+	text-align: center;
+	color: #fff;
+}
+th:first-child, td:first-child {
+	border-right: 2px dashed #fff;
+}
+
+tr:nth-child(even) {
+	background-color: #88b7c6;
+}
+
+input {
+	padding: 0.5rem 1rem;
+	margin-right: 2rem;
+	width: 20vw;
+	outline: none;
+	border: 1px solid #88b7c6;
+}
+
+button {
+	background-color: #4e9db8;
+	border: none;
+	border-radius: 10rem;
+	padding: 0.3rem 1rem;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1rem;
+	cursor: pointer;
+	outline: none;
+	display: inline;
+}
+
+.reverse-notes {
+	background-color: transparent;
+	font-weight: bold;
+	font-size: 2rem;
+	position: relative;
+}
+
+.reverse-notes::after {
+	content: '>';
+	position: absolute;
+	transform: rotate(90deg);
+	width: 4rem;
+	color: #4e9db8;
+}
+
+.on::after {
+	content: '<';
+	position: absolute;
+	transform: rotate(90deg);
+	width: 4rem;
+	color: #4e9db8;
+}
+
+.pagination {
+	margin: 2rem auto 0;
+}
+
+.add-block, .search-block {
+	margin-bottom: 2rem;
+}
+
